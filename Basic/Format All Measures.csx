@@ -12,9 +12,4 @@
  */
 
 //Format All Measures
-foreach (var m in Model.AllMeasures)
-{
-    m.Expression = FormatDax(m.Expression);
-    /* Cycle over all measures in model and format 
-    them all using DAX Formatter */
-}
+Model.AllMeasures.FormatDax();
